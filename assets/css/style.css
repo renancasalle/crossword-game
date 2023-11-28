@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #151d38;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    overflow: hidden;
+}
+
+input {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 2px;
+    width: 32px;
+    height: 28px;
+    border-radius: 6px;
+    border: none;
+    text-align: center;
+    transition: all .4s .3s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:disabled {
+    background-color: #e4e4e4;
+}
+
+.crossword-container {
+    width: 75%;
+    height: 100%;
+    text-align: center;
+    background-color: #151d38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hyphen-input {
+    width: 32px;
+    height: 28px;
+    background-color: transparent !important;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.empty-input {
+    width: 32px;
+    height: 28px;
+    background-color: transparent !important;
+    color: #ffffff;
+}
+
+.tips-container {
+    width: 25%;
+    height: 100%;
+    padding: 24px 0 0 24px;
+    background-color: #d82145;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tips-container h1 {
+    align-self: center;
+    text-transform: uppercase;
+    padding-bottom: 24px;
+}
+
+.tips::-webkit-scrollbar {
+    width: 6px;
+}
+
+.tips::-webkit-scrollbar-track {
+    background: #d82145;
+}
+
+.tips::-webkit-scrollbar-thumb {
+    background-color: #151d38;
+    border-radius: 50px;
+}
+
+.tips {
+    overflow-y: scroll;
+    padding-right: 20px;
+}
+
+.tips p {
+    margin-bottom: 24px;
+}
+
+.answer {
+    transition: all .4s ease-in-out;
+}
+
+.answer.right {
+    color: #62de6b;
+}
+
+.final-text-container {
+    position: absolute;
+    bottom: 70px;
+    right: 34%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s .3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.final-text-container.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#resetBtn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+#resetBtn:hover {
+    padding: 8px 18px;
+}
