@@ -14,10 +14,10 @@ Jogo de palavras cruzadas desenvolvido para a matéria de Arquitetura Computacio
 
 ## 📷 Screenshot
 
-<img src="assets/image/crossword-game-screenshot.png" width="100%">
+<img src="assets/image/crossword-game-screenshot.png.png" width="100%">
 
 <br>
 
 ## 🔗 URL do jogo
 
-- [Clique aqui para acessar]
+- [Clique aqui para acessar](https://renancasalle.github.io/crossword-game/)
